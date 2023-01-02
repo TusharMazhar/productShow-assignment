@@ -2,6 +2,7 @@ import React from 'react'
 import {  useParams } from 'react-router-dom';
 import {useFetch} from '../hooks/useFetch'
 import '../style/ProductDetails.css'
+import Star from './Star'
 
 function ProductDetails() {
   const {productId} = useParams()
@@ -19,12 +20,8 @@ function ProductDetails() {
                   <h4>{fectchData.title}</h4>
                   <p>{fectchData.description}</p>
                   <p className='price'>${fectchData.price}</p>
-                  <div className="stars">
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
+                  <div className='rating'>
+                     <Star star={fectchData.rating} />
                   </div>
                   <div className="btn">
                       <button>Add to Cart</button>

@@ -15,6 +15,9 @@ function ProductList({products}) {
         <p>{description.slice(0,60)}...</p>
         <p className='price'>${price}</p>
       </div>
+      <div className='rating'>
+         <Star star={rating} />
+      </div>
       <div className="stars">
           <i className="fa-solid fa-star"></i>
           <i className="fa-solid fa-star"></i>
