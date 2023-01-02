@@ -16,7 +16,7 @@ axiosInstance.interceptors.request.use(
 );
 
 axiosInstance.interceptors.response.use(
-    // we can do something here before handing then and catch block ,I am here returning response.data
+    // we can do something here before handling 'then' and 'catch' block ,I am here returning response.data
     function (response) {
       return response.data;
     }, 
