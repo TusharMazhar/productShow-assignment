@@ -1,18 +1,21 @@
+:root{
+    --height:650px;
+}
+
 .root-wrapper{
     display: flex;
-    width: 100%;
+    width: 95%;
     margin: 20px;
+    border: 1px solid rgb(20, 67, 20);
 }
 .img-section{
-    width:50%;
-    height: 650px;
-    border: 1px solid yellow;
+    width:20%;
+    height: var(--height);
     padding: 10px;
 }
 .content-section{
-    width:50%;
-    height: 650px;
-    border: 1px solid green;
+    width:80%;
+    height: var(--height);
     padding: 10px;
 }
 
@@ -20,4 +23,7 @@ img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.back-btn{
+    margin:5px
 }
