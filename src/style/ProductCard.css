@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700;900&family=Raleway:wght@100;300;500;700&display=swap');
+
+:root{
+    --textColor: #1b2741;
+    --starColor: #f67034;
+
+}
+.container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+.msg{
+    text-align: center;
+    margin-top:30px;
+    font-size: 25px;
+}
+.product{
+    width:300px;
+    border:3px solid rgb(222, 220, 220);
+    height: 400px;
+    margin:10px;
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+}
+
+
+.image{
+    width:100%;
+    height:130px;
+    object-fit: cover;
+    text-align: center;
+}
+
+img{
+    width:100%;
+    height:100px;
+    object-fit: contain;
+    margin-top:10px
+}
+.card-details{
+    height: 190px;
+}
+h4{
+    padding: 4px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin:2px
+}
+p{
+    padding: 4px;
+    margin:2px
+}
+.price{
+   color: rgb(40, 103, 40);
+   font-weight: bold;
+   font-size: 30px;
+   padding: 4px;
+   margin:10px 0px;
+   margin:2px
+
+}
+.btn{
+    display: flex;
+    margin:20px 0px 4px 4px;
+    justify-content: space-between;
+}
+
+button{
+    padding: 10px;
+}
+button:hover{
+    background-color: green;
+    color:white;
+    border:1px solid green;
+    cursor: pointer;
+}
+
+
+

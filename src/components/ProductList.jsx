@@ -1,11 +1,33 @@
+import '../style/ProductCard.css'
+import { Link } from "react-router-dom";
+import Star from './Star'
 
- function ProductList({products}) {
-  const {title,price,description,category,image} = products
+
+function ProductList({products}) {
+  const {id,title,price,description,category,image,rating} = products
   return (
-    <div>
-        {
-          title
-        }
+    <div className="product">
+      <div className="image">
+        <img src={image} alt={image} />
+      </div>
+      <div className='card-details'>
+        <h4>{title.slice(0,40)}</h4>
+        <p>{description.slice(0,60)}...</p>
+        <p className='price'>${price}</p>
+      </div>
+      <div className="stars">
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+      </div>
+      <div className="btn">
+          <Link to={`product/${id}`}>
+            <button>Details</button>
+          </Link>
+          <button>Buy Now</button>
+      </div>
     </div>
   )
 }

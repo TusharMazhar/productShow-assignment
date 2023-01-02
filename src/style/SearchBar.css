@@ -1,0 +1,18 @@
+.search-bar{
+    text-align: center;
+    margin-top:20px;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 60px;
+    color: green;
+    font-weight: bold;
+}
+
+input{
+    width:400px;
+    height: 45px;
+    border-radius: 10px;
+    padding: 10px;
+}

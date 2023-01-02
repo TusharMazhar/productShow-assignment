@@ -1,5 +1,4 @@
 import React,{ useState , useEffect } from 'react'
-import { Spin } from 'antd';
 import axiosInstance from '../lib/axios/index'
 
 export const useFetch = (url) =>{
