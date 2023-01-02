@@ -1,8 +1,9 @@
+import Routes from './routes/routes'
 function App() {
   return (
-    <div className="">
-          <h1>Initial Setup</h1>
-    </div>
+    <>
+        <Routes />  
+    </>
   )
 }
 
