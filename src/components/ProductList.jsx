@@ -18,13 +18,6 @@ function ProductList({products}) {
       <div className='rating'>
          <Star star={rating} />
       </div>
-      <div className="stars">
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-      </div>
       <div className="btn">
           <Link to={`product/${id}`}>
             <button>Details</button>
