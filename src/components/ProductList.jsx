@@ -16,7 +16,7 @@ export default function ProductList() {
                   <div key={item.id} style={{backgroundColor:'#A9A9A9',padding:'10px',margin:'10px'}}>
               
                         Id:
-                        <Link to={`/post/${item.id}`} >
+                        <Link to={`/product/${item.id}`} >
                             <span style={{fontWeight:'bold',fontSize:'18px'}}>  {item.id}</span> 
                         </Link>
                   </div>)
